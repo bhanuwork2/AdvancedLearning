@@ -4,7 +4,8 @@ public class BaseballCoach implements Coach {
 
 	// define a private field for the dependency
 	private FortuneService fortuneService;
-	
+
+	//test commnet
 	// define a constructor for dependency injection
 	public BaseballCoach(FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
@@ -19,6 +20,7 @@ public class BaseballCoach implements Coach {
 	public String getDailyFortune() {		
 		// use my fortuneService to get a fortune//		
 		return fortuneService.getFortune();
+		// anothe test comment
 	}
 }
 
